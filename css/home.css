@@ -1,4 +1,4 @@
-@media(min-device-width:480px){
+@media(max-device-width:500px){
 	body{
 		font-size: 4em;
 
@@ -9,7 +9,7 @@
 	}
 }
 
-@media(min-device-width:720){
+@media(max-device-width:1000){
 	body{
 		font-size: 4em;
 
