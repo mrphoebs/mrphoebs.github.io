@@ -1,4 +1,4 @@
-@media(max-width:900px){
+@media (max-device-width:1280px) and (orientation:portrait){
 	body{
 		font-size: 2em;
 
