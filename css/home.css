@@ -1,5 +1,5 @@
 body{
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 #content{
@@ -26,6 +26,12 @@ dt{
 
 dd{
 	color: #555;
+}
+
+@media(max-resolution:200dpi){
+	body{
+		font-size: 1.5em;
+	}
 }
 
 @media(orientation:portrait){
