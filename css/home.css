@@ -9,11 +9,6 @@
 body{
 	font-family: capIt;
 	font-size: 1.5em;
-
-	background-image: url(../images/parchment.jpg);
-        background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
 }
 
 #content{
@@ -25,21 +20,21 @@ body{
 
 #name{
 	font-size: 2.75em;
-	color: #553333;
+	color: #333333;
 }
 
 #pronounciation{
 	margin-top: 5px;
-	color: #996666;
+	color: #666666;
 }
 
 dt{
 	font-weight: bold;
-	color: #554444;
+	color: #444444;
 }
 
 dd{
-	color: #553535;
+	color: #353535;
 }
 
 @media(orientation:portrait){
