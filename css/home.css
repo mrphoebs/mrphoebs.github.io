@@ -1,5 +1,11 @@
-body{
-	font-size: large;
+@media(max-device-width:480px){
+	body{
+		font-size: 2em;
+
+	}
+	#content{
+		width: 100%;
+	}
 }
 
 #content{
