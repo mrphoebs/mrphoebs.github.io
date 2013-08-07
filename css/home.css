@@ -27,11 +27,12 @@ dd{
 
 @media(orientation:portrait){
 	body{
-		font-size: 2em;
+		font-size: 4em;
 
 	}
 	#content{
-		width: 100%;
+		width: 90%;
+		margin: auto;
 	}
 }
 
