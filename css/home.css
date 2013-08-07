@@ -1,18 +1,18 @@
-@media(max-device-width:720px){
+@media(max-width:800px){
 	body{
-		font-size: 2em;
+		font-size: 1.5em;
 
 	}
 	#content{
-		margin: auto;
 		width: 100%;
+		margin: 0 auto 0px;
 	}
 }
 
 #content{
 	margin: auto;
 	width: 60%;
-	min-width: 25em;
+	min-width: 15em;
 	padding-top: 10%;
 }
 
