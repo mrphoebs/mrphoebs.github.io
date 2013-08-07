@@ -1,4 +1,4 @@
-@media(max-device-width:480px){
+@media(min-device-width:480px){
 	body{
 		font-size: 4em;
 
