@@ -37,3 +37,15 @@ dd{
 	}
 }
 
+@media(max-device-width:720px){
+	body{
+		font-size: 4em;
+
+	}
+	#content{
+		width: 80%;
+		min-width: 5em;
+		margin: auto;
+	}
+}
+
