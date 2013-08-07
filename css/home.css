@@ -1,17 +1,26 @@
 @media(max-device-width:480px){
 	body{
-		font-size: 2em;
+		font-size: 4em;
 
 	}
 	#content{
+		margin: auto;
 		width: 100%;
 	}
 }
 
+@media(min-device-width:720){
+	body{
+		font-size: 4em;
+
+	}
+}
+
+
 #content{
 	margin: auto;
 	width: 60%;
-	max-width: 40em;
+	min-width: 25em;
 	padding-top: 10%;
 }
 
