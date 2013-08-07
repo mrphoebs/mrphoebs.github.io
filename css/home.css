@@ -1,13 +1,4 @@
-@font-face
-{
- font-family: capIt;	
- src: url(../fonts/cap_it.ttf);
-}
-
-
-
 body{
-	font-family: capIt;
 	font-size: 1.5em;
 }
 
@@ -15,7 +6,7 @@ body{
 	margin: auto;
 	width: 60%;
 	min-width: 15em;
-	padding-top: 5%;
+	padding-top: 3%;
 }
 
 #name{
