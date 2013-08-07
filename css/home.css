@@ -36,16 +36,3 @@ dd{
 		margin: auto;
 	}
 }
-
-@media(max-device-width:1000px){
-	body{
-		font-size: x-large;
-
-	}
-	#content{
-		width: 80%;
-		min-width: 5em;
-		margin: auto;
-	}
-}
-
