@@ -1,0 +1,24 @@
+#content{
+	margin: 0 auto 0px;
+	width: 60%;
+	margin-top: 10%;
+}
+
+#name{
+	font-size: 2.75em;
+	color: #333;
+}
+
+#pronounciation{
+	margin-top: 5px;
+	color: #666;
+}
+
+dt{
+	font-weight: bold;
+	color: #444;
+}
+
+dd{
+	color: #353535;
+}
