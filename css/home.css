@@ -37,9 +37,9 @@ dd{
 	}
 }
 
-@media(max-device-width:720px){
+@media(max-device-width:1000px){
 	body{
-		font-size: 4em;
+		font-size: 6em;
 
 	}
 	#content{
