@@ -1,6 +1,6 @@
 @media(max-device-width:500px){
 	body{
-		font-size: 4em;
+		font-size: 3em;
 
 	}
 	#content{
@@ -12,7 +12,6 @@
 @media(max-device-width:1000){
 	body{
 		font-size: 4em;
-
 	}
 }
 
