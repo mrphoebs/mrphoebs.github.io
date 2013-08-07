@@ -1,10 +1,11 @@
-@media(max-width:1000px){
+@media(max-width:900px){
 	body{
 		font-size: 2em;
 
 	}
 	#content{
 		width: 100%;
+		min-width: 10em;
 		margin: 0 auto 0px;
 	}
 }
