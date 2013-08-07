@@ -9,13 +9,6 @@
 	}
 }
 
-@media(max-device-width:1000){
-	body{
-		font-size: 4em;
-	}
-}
-
-
 #content{
 	margin: auto;
 	width: 60%;
