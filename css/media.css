@@ -1,4 +1,4 @@
-@media screen and (max-device-width: 1280px) and (min-device-width: 720px) and (min-resolution:200dpi){
+@media screen and (min-resolution:200dpi){
 	body{
 		font-size: 1.5em;
 	}
@@ -8,7 +8,7 @@
 
 }
 
-@media screen and (max-device-width: 1920px) and (min-device-width: 1080px) and (min-resolution:300dpi){
+@media screen and (min-resolution:300dpi){
 	body{
 		font-size: 2em;
 	}
