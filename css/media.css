@@ -1,6 +1,6 @@
 @media screen and (min-resolution:200dpi){
 	body{
-		font-size: 1.5em;
+		font-size: 4em;
 	}
 	#content{
 		padding-top: 5%;
@@ -25,7 +25,7 @@
 		
 	}
 	#content{
-		width: 90%;
+		width: 80%;
 		min-width: 10em;
 		margin: auto;
 	}
