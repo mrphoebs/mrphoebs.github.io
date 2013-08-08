@@ -10,7 +10,8 @@ body{
 	background-size: cover;
 
 	font-family: chalk;
-	letter-spacing: 0.35em;
+	letter-spacing: 0.2em;
+	word-spacing: 0.5em;
 }
 
 #content{
