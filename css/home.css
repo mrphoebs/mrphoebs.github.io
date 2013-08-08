@@ -5,7 +5,10 @@
 
 body{
 	background-image: url(../images/blckbrd.jpg);
-	background-size: 100% auto;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+
 	font-family: chalk;
 	letter-spacing: 0.35em;
 }
