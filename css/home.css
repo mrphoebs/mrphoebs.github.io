@@ -1,12 +1,9 @@
-body{
-	font-size: 1em;
-}
 
 #content{
 	margin: auto;
-	width: 60%;
+	width: 70%;
 	min-width: 15em;
-	padding-top: 3%;
+	padding-top: 5%;
 }
 
 #name{
@@ -17,6 +14,12 @@ body{
 #pronounciation{
 	margin-top: 5px;
 	color: #888;
+	padding-left: 2em;
+	padding-top: 0.5em;
+}
+
+dl{
+	padding-left: 2em;
 }
 
 dt{
@@ -26,22 +29,4 @@ dt{
 
 dd{
 	color: #555;
-}
-
-@media(max-resolution:200dpi){
-	body{
-		font-size: 1.5em;
-	}
-}
-
-@media(orientation:portrait){
-	body{
-		font-size: 2.25em;
-		
-	}
-	#content{
-		width: 80%;
-		min-width: 10em;
-		margin: auto;
-	}
 }
