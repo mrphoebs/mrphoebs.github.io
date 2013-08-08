@@ -1,4 +1,4 @@
-@media screen and (oirentation: landscape) and (min-resolution: 200ppi){
+@media screen and (oirentation: landscape) and (max-resolution: 200ppi){
 	body{
 		font-size: 4em;
 	}
