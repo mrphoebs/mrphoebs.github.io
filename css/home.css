@@ -1,3 +1,14 @@
+@font-face{
+	font-family: chalk;
+	src: url(../fonts/chalk.ttf);
+}
+
+body{
+	background-image: url(../images/blckbrd.jpg);
+	background-size: 100% auto;
+	font-family: chalk;
+	letter-spacing: 0.35em;
+}
 
 #content{
 	margin: auto;
@@ -8,12 +19,12 @@
 
 #name{
 	font-size: 2.75em;
-	color: #333;
+	color: #bbb;
 }
 
 #pronounciation{
 	margin-top: 5px;
-	color: #888;
+	color: #bbb;
 	padding-left: 2em;
 	padding-top: 0.5em;
 }
@@ -24,9 +35,10 @@ dl{
 
 dt{
 	font-weight: bold;
-	color: #444;
+	color: #bbb;
 }
 
 dd{
-	color: #555;
+	padding-top: 0.5em;
+	color: #999;
 }
