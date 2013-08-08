@@ -1,4 +1,4 @@
-@media screen and (max-resolution:100dpi){
+@media screen and (max-device-width: 1024px){
 	body{
 		font-size: 4em;
 	}
