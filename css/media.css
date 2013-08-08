@@ -1,4 +1,4 @@
-@media screen and (min-resolution: 50dpcm){
+@media screen and (oirentation: landscape) and (min-resolution: 200ppi){
 	body{
 		font-size: 4em;
 	}
@@ -7,17 +7,6 @@
 	}
 
 }
-
-@media screen and (min-resolution:300dpi){
-	body{
-		font-size: 2em;
-	}
-	#content{
-		padding-top: 5%;
-	}
-
-}
-
 
 @media screen and (orientation:portrait){
 	body{
