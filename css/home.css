@@ -1,17 +1,4 @@
-@font-face{
-	font-family: chalk;
-	src: url(../fonts/chalk.ttf);
-}
-
 body{
-	background-image: url(../images/blckbrd.jpg);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-
-	font-family: chalk;
-	letter-spacing: 0.2em;
-	word-spacing: 0.5em;
 }
 
 #content{
@@ -23,12 +10,12 @@ body{
 
 #name{
 	font-size: 2.75em;
-	color: #bbb;
+	color: #4F2433;
 }
 
 #pronounciation{
 	margin-top: 5px;
-	color: #bbb;
+	color: #B36D84;
 	padding-left: 2em;
 	padding-top: 0.5em;
 }
@@ -39,10 +26,10 @@ dl{
 
 dt{
 	font-weight: bold;
-	color: #bbb;
+	color: #6E4452;
 }
 
 dd{
 	padding-top: 0.5em;
-	color: #999;
+	color: #734655;
 }
