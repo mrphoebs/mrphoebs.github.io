@@ -1,0 +1,47 @@
+
+.content{
+	width:8.27in; 
+	margin:1.0in .5in .5in .5in;
+	text-align: justify;
+        text-justify: distribute;
+	line-height: 1.5;	
+}
+
+.block{
+	width: 75%;
+	margin-left: 25%;
+	font-size: 0.92em;
+	padding-bottom: 5px;
+}
+
+#name{
+	font-size: 3.5em;
+	color: #444;
+}
+
+#phone{
+	padding-left: 50px;
+}
+
+#email{
+	padding-left: 5px;
+}
+
+#name_and_email{
+	padding-bottom: .5in;
+}
+
+.tag{
+	width: 25%;
+	float: left;
+	font-size: 1.75em;
+	font-style: italic;
+	color: #777;
+}
+
+hr{
+	margin-left: 25%;
+	border: 0 none;
+	height: 1px;
+	background-color: #AAA;
+}
