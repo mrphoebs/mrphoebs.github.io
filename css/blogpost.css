@@ -39,6 +39,22 @@
 	padding-right: 5%;
 }
 
+a{
+	font-size: 1em;
+}
+
+a:link{
+	color: #444	
+}
+
+a:visited{
+	color: #444	
+}
+
+a:hover{
+	color: #000	
+}
+
 .by3{
 	width: 30%;
 	float: left;
