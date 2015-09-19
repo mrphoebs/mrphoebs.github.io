@@ -91,3 +91,6 @@ p{
 	clear: both;
 }
 
+.pbreak{
+	page-break-after: always;
+}
