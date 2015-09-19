@@ -39,8 +39,22 @@
 	padding-right: 5%;
 }
 
-a{
-	font-size: 1em;
+.big-link{
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
+img{
+	display: block;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+blockquote{
+	font-size: 1.25em;
+	margin: auto;
+	text-align: center;
 }
 
 a:link{

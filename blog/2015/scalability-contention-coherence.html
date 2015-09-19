@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Suman Karthik: Scalability, Contention and Coherence</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<link rel="icon" type="image/ico" href="../favicon.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+		<link href='../../css/pure-min.css' rel='stylesheet' type='text/css'>
+		<link href='../../css/blogpost.css' rel='stylesheet' type='text/css'>
+		<link href='../../css/blogpostMedia.css' rel='stylesheet' type='text/css'> 
+
+	</head>
+	<body>
+		<div id="content" class="content">
+			<div id="title" class="block">
+				<div id="maintitle">
+					Scalability, Contention and Coherence				
+				</div>
+				<div id="subtitle">
+					How scalability is inherently tied to contention and coherence
+				</div>		
+			</div>
+			
+		
+
+			<div class="tag">
+				Scalability	
+			</div>
+
+			<div class="block">
+				<p>
+					Scalability is the ability or charecteristic of a system to take on more work/requests without degrading in a measured constraint like throughput and latency.
+					How much work a system can do effectively i.e meeting valid throughput, latency objectives is at the very least constrained by the capacity of the system. When 
+					we discuss scalability however we are interested in delving into the things that hamper scalability in the face of both limited and expandable capacity.
+				</p>
+				<p>
+					In the computing world this expandable capacity usually comes in the form of discrete quanta of resources for example, adding cores to processor, adding more processor
+					sockets to a mother board, adding more hard disks (RAID 0/10), adding more machines to a cluster. Each atomic resource by itself has an inherent capacity to do work which adds
+					to the global capacity of work that can be done.	
+				</p>
+				<p>
+					Let's further define load on a computing system as the amount of work that is submitted to the system. Let's simplify scalability for our discussion and formally define it as
+					<b>throughput/load</b> on the system.
+				</p>
+			</div>
+			<hr/>
+
+			
+			<div class="tag">
+				Contention	
+			</div>
+
+			<div class="block">
+				<p>
+					As we have discussed above, global capacity of a computing system is an aggregate of individual capacities of coarser grained resources.
+				In an ideal world 
+				<blockquote>
+					C = c1 + c2 + .... cn
+				</blockquote><br/>
+				where <b>C</b> is global capacity and <b>c1...cn</b> are capacities of individual resources. This would also mean, that in an ideal world
+				<blockquote>
+					T = t1 + t2 + .... tn
+				</blockquote><br/>
+				where <b>T</b> is global throughput and <b>t1...tn</b> if both of the above were true in a system, we would have what is generally referred to as a
+				<b>linearly scalable system</b>. Except there is no such thing as a linearly scalable system in the real world, systems that appear linearly scalable are merely systems that 
+				haven't been put under enough load yet. Bottlenecks emerge in all(almost) systems as load increases, these bottlenecks emerge when there is contention for the same set of global
+				resources. Computing systems usually deal with resource contention, by queueing or dropping work. But the inevitable fact is when there is resource contention, one's system is no 
+				longer linearly scalable.
+
+				<img src="images/scalability-contention.png"></img>
+				</p>
+
+				<b>Under heavy contention scalability flatlines.</b>
+
+				<p>Remedying this flatlining is an addressable problem. Find and remove bottlnecks if possible. If not, add more capacity to alleviate the bottleneck. The effects of contention problems 
+				are all around us. Too many threads contending for a resource, processes waiting in the runqeue of the scheduler, too many write or read requests waiting to be scheduled the io scheduler.</p>
+
+			</div>
+			<hr/>
+
+			
+	
+			<div class="tag">
+				Coherence
+			</div>	
+			<div class="block">
+				
+			</div>
+			<hr/>	
+	</body>
+</html>
