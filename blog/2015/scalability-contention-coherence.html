@@ -29,7 +29,7 @@
 
 			<div class="block">
 				<p>
-					Scalability is the ability or charecteristic of a system to take on more work/requests without degrading in a measured constraint like throughput and latency.
+					Scalability is the ability or characteristic of a system to take on more work/requests without degrading in a measured constraint like throughput and latency.
 					How much work a system can do effectively i.e meeting valid throughput, latency objectives is at the very least constrained by the capacity of the system. When 
 					we discuss scalability however we are interested in delving into the things that hamper scalability in the face of both limited and expandable capacity.
 				</p>
@@ -64,16 +64,16 @@
 				where <b>T</b> is global throughput and <b>t1...tn</b> if both of the above were true in a system, we would have what is generally referred to as a
 				<b>linearly scalable system</b>. Except there is no such thing as a linearly scalable system in the real world, systems that appear linearly scalable are merely systems that 
 				haven't been put under enough load yet. Bottlenecks emerge in all(almost) systems as load increases, these bottlenecks emerge when there is contention for the same set of global
-				resources. Computing systems usually deal with resource contention, by queueing or dropping work. But the inevitable fact is when there is resource contention, one's system is no 
+				resources. Computing systems usually deal with resource contention, by queuing or dropping work. But the inevitable fact is when there is resource contention, one's system is no 
 				longer linearly scalable.
 
 				<img src="images/scalability-contention.png"></img>
 				</p>
 
-				<blockquote>Under heavy contention throughput flatlines.</blockquote>
+				<blockquote>Under heavy contention throughput flat-lines.</blockquote>
 
-				<p>Remedying this flatlining is an addressable problem. Find and remove bottlnecks if possible. If not, add more capacity to alleviate the bottleneck. The effects of contention problems 
-				are all around us. Too many threads contending for a resource, processes waiting in the runqeue of the scheduler, too many write or read requests waiting to be scheduled the io scheduler.</p>
+				<p>Remedying this flatlining is an addressable problem. Find and remove bottlenecks if possible. If not, add more capacity to alleviate the bottleneck. The effects of contention problems 
+				are all around us. Too many threads contending for a resource, processes waiting in the runqeue of the scheduler, too many write or read requests waiting to be scheduled the IO scheduler.</p>
 
 			</div>
 			<hr/>
@@ -85,10 +85,40 @@
 			</div>	
 			<div class="block">
 				<p>
-				Coherence, in the context of computing systems means multiple individual interested resources, within the system observe/agree on an event/state. The requirement for Coherence in a computing system,
-				by itseby itself does not effect, throughput or scalability drastically. 
+				Coherence, in the context of computing systems means multiple, individual, interested resources, within the system observe/agree on an event/state. The requirement for Coherence in a computing system,
+				by itself does not affect, throughput or scalability drastically. If however coherence was a precondition for safe execution/running of the system, then every event/state change that requires
+				coherence among participating resources leads to degradation of the system throughput. For example, on a multi core processor, if one of the cores, writes a value to "x" it's register and 
+				subsequently L1 cache, which 
+				represents a memory location in the OS's virtual memory and triggers a memory barrier, then the caches of all other cores that contain "x" should be invalidated and reloaded with the correct 
+				value of "x". This means either all progress is stopped until coherence is reached or any progress made before coherence is reached is discarded. Hence any requirement of coherence among resources
+				to make progress is going to severely affect the system's throughput. Another example of coherence hindering throughput is any system that requires distributed transactions. 
+				</p>
+
+				<p>
+				Coherence can be achieved through a central coordinator or in a peer-peer fashion where there is no central coordinator. The minimum number of messages that need to exchanged for N resources to
+				reach consensus is N so O(N) is the best case message passing complexity for coherence.</p>
+
+				<blockquote>Throughput is inversely proportional to number of events/state transitions that require coherence to make progress</blockquote><br/>
+				
+				<img src="images/scalability-contention-coherence.png"></img>
+
+				<blockquote>Throughput is inversely proportional to the number of resources/nodes that need to be coherent to make progress</blockquote>
+				
+				<p>
+				The above image shows clearly that coherence constraints negatively impact throughput of a system. Unlike contention the effects of coherence constraints will only worsen by adding extra capacity
+				because, it means more coordination is required to make progress.
 				</p>
 			</div>
-			<hr/>	
+			<hr/>
+
+
+			<div class="tag">
+				Lessons
+			</div>
+			<div class="block">
+				We now know when designing and building systems that need to scale, one must watch out for contention and coherence issues. One must further reason if the contention and coherence
+				issues are an artifact of bad design, bad capacity planning or inherent to the problem at hand. One can build highly scalable systems by avoiding contention and eliminating coherence
+				constraints where none are required.
+			</div>	
 	</body>
 </html>
