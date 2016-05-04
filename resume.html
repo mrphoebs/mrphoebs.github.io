@@ -70,7 +70,7 @@
 			<div id="domains" class="block">
 				<div id="work" class="by2padded">
 					<div class="hed">Work</div>
-					Large scale Distributed applications, Highly Available DataStores (NoSQL) and Consensus Platforms, Low latency & high predictability applications, Intelligence at scale.
+					IaaS, PaaS, Large scale Distributed applications, Highly Available DataStores (NoSQL) and Consensus Platforms, Low latency & high predictability applications, Intelligence at scale.
 				</div>
 				<div id="Research" class="by2padded">
 					<div class="hed">Research</div>
@@ -87,15 +87,19 @@
 				<div class="hed">Flipkart</div> 
 				<div class="subhed by2"> Technical Architect </div><div class="duration by2">April 2012 - Now</div>
 				<p> I am part of the tech-infra team, that's creating Software Defined Infra and Services in our new DC. I used own and drive the tech mandate for the End-to-End 
-				experience team. I've designed and built multiple platforms and systems that are widely used at Flipkart to deliver critical functionality. Some of them include...</p>
+				experience team. I've designed, built and owned multiple platforms and systems that are widely used at Flipkart to deliver critical functionality. Some of them include...</p>
+
+				<p><b>IaaS Compute:</b> I own and am responsible for Flipkart's Elastic Compute Platform. This along with our ELB are fundamental IaaS primitives on top of which
+				All our PaaS components and customer applications are deployed. Our recent work has centered around improving utilization through better fitment and to address the tech/domain debt accumulated 
+				in our run up to last year's Big Billion Days.</p>
 
 				<p><b>Scotty:</b> Deployment and change management service that enables an immutable infra paradigm in the cloud. It coordinates and governs infra and release assets to achieve, 
 				correct, predictable, well controlled deployments and change management on SDI(Software Defined Infra). It is designed to do it's job without communicating with atomic units of infra 
-				which makes it trivially scalable and able to handle change management for 100s of thousands of infra assets, simultaneously.
+				which makes it trivially scalable and able to handle change management for 100s of thousands of infra assets, simultaneously.</p>
 
 				<p><b>Repo-svc:</b> A generic post build release service that's used to publish and consume binary release assets in a well defined manner. Release artifacts are published into versioned 
 				repos which can further be used to compose versioned environments which make up the Universe of released assets for associated deployments. The design of repo-svc allows for repeatable
-				and predictable deployments by enforcing well defined immutable environments comprised of release assets.
+				and predictable deployments by enforcing well defined immutable environments comprised of release assets.</p>
 			       
 				<p><b>Lego:</b> Lego is a highly performant, highly scalable (in terms of traffic and developers) and resilient  application framework. It is an incredibly flexible
 				framework that is used by multiple teams at Flipkart and is deployed in different shapes on over a thousand bare-metal servers. These installations are combinedly capable of handling upto 2 
